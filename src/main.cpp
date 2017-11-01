@@ -41,6 +41,8 @@ void handleNotFound(){
 void setupWifi() {
   Serial << "Connecting to " << ssid << endl;
 
+  Serial << "SSID: " << WiFi.SSID() << endl;  
+  WiFi.mode(WIFI_STA);
   WiFi.begin(ssid, password);
   while (WiFi.status() != WL_CONNECTED) {
     delay(500);

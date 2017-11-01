@@ -5,3 +5,4 @@
 .piolibdeps
 .vscode/c_cpp_properties.json
 config.h
+.vscode/launch.json
